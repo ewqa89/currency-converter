@@ -1,0 +1,53 @@
+.form__labelText {
+    max-width: 400px;
+    width: 100%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.form__input {
+    border: 2px solid gainsboro;
+    padding: 10px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.form__select {
+    border: 2px solid gainsboro;
+    padding: 10px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.form__button {
+    width: 100%;
+    border: none;
+    background-color: rgb(105, 43, 77);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.form__button:hover {
+    background-color: rgb(136, 56, 100);
+}
+
+.form__button:active {
+    background-color: rgb(150, 64, 68);
+}
+
+.form__fildset {
+    border: 2px solid gray;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.form__legend {
+    background-color: rgb(105, 43, 77);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}

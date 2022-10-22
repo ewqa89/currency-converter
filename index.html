@@ -9,8 +9,10 @@
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/body.css " rel="stylesheet">
     <link href="css/div.css" rel="stylesheet">
     <link href="css/form.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
     <script defer src="js/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +20,7 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="body">
     <div class="container">
         <form class="form js-form">
             <fieldset class="form__fildset">
@@ -35,25 +37,27 @@
                     <label>
                         <span class="form__labelText">Wybierz walutę:*</span>
                         <select class="form__select js-currency" name="currency">
-                            <option class="kupa" value="4.8468" selected>EUR</option>
-                            <option value="4.9905">USD</option>
+                            <option value="4.7804" selected class="eur">EUR</option>
+                            <option value="4.9000">USD</option>
+                            <option value="3.2463">JPY</option>
+                            <option value="4.8520">CHF</option>
                         </select>
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        Po przeliczeniu otrzymasz: <strong class="js-result"></strong> zł
                     </label>
                 </p>
             </fieldset>
             <p>
                 <button class="form__button">Przelicz</button>
             </p>
+            <fieldset class="form__fildset form__fildset--result">
+                <p>
+                    <label class="form__label">
+                        Po przeliczeniu otrzymasz: <strong class="js-result"></strong> zł
+                    </label>
+                </p>
+                <p class="form__paragraph">*Kurs z dnia 22.10.2022</p>
+            </fieldset>
         </form>
     </div>
-    <footer class="footer">
-        <p>*Kurs z dnia 13.10.2022</p>
-    </footer>
 </body>
 
 </html>

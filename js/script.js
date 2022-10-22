@@ -11,6 +11,6 @@ formElement.addEventListener("submit", (event) => {
 
     let result = value * currency;
 
-    resultElement.innerText = result;
+    resultElement.innerText = result.toFixed(2);
 });
 

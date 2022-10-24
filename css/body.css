@@ -1,6 +1,6 @@
 .body {
     background-image: url("../images/mountains.jpg");
     background-position: center;
-    background-size: cover;
+    background-size: 2500px auto;
     background-repeat: no-repeat;
 }

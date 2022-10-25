@@ -1,5 +1,6 @@
 {
     const currencyElement = document.querySelector(".js-currency");
+    const exchangeChoose = document.querySelector(".js-exchangeChoose");
 
     const onFormSubmit = (event) => {
         event.preventDefault();
@@ -15,24 +16,28 @@
         resultElement.innerText = result.toFixed(2);
     }
 
+    const showChangedCurrency = () => {
+        const currencyElement2 = document.querySelector(".js-currency");
+
+        exchangeChoose.innerText = (`*Kurs: ${currencyElement2.value}`);
+    }
+
+    const showCurrencyCourse = () => {
+        
+        exchangeChoose.innerText = (`*Kurs: ${currencyElement.value}`);
+
+        currencyElement.addEventListener("change", showChangedCurrency);
+
+    }
+    
     const init = () => {
         const formElement = document.querySelector(".js-form");
 
         formElement.addEventListener("submit", onFormSubmit);
-    }
 
-    const showCourse = () => {
-        const exchangeChoose = document.querySelector(".js-exchangeChoose");
-
-        exchangeChoose.innerText = (`*Kurs: ${currencyElement.value}`);
-
-        currencyElement.addEventListener("change", () => {
-
-            const currencyElement2 = document.querySelector(".js-currency");
-            exchangeChoose.innerText = (`*Kurs: ${currencyElement2.value}`);
-        });
+        showCurrencyCourse();
+        
     }
 
     init();
-    showCourse();
 }

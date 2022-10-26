@@ -1,6 +1,5 @@
 {
     const currencyElement = document.querySelector(".js-currency");
-    const exchangeChoose = document.querySelector(".js-exchangeChoose");
 
     const onFormSubmit = (event) => {
         event.preventDefault();
@@ -22,7 +21,7 @@
         exchangeChoose.innerText = (`*Kurs: ${currencyElement2.value}`);
     }
 
-    const showCurrencyCourse = () => {
+    const showCurrencyCourse = (exchangeChoose) => {
         
         exchangeChoose.innerText = (`*Kurs: ${currencyElement.value}`);
 
@@ -32,10 +31,11 @@
     
     const init = () => {
         const formElement = document.querySelector(".js-form");
+        const exchangeChoose = document.querySelector(".js-exchangeChoose");
 
         formElement.addEventListener("submit", onFormSubmit);
 
-        showCurrencyCourse();
+        showCurrencyCourse(exchangeChoose);
         
     }
 

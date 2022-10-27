@@ -15,7 +15,7 @@
         resultElement.innerText = result.toFixed(2);
     }
 
-    const showChangedCurrency = () => {
+    const showChangedCurrency = (exchangeChoose) => {
         const currencyElement2 = document.querySelector(".js-currency");
 
         exchangeChoose.innerText = (`*Kurs: ${currencyElement2.value}`);
@@ -25,7 +25,7 @@
         
         exchangeChoose.innerText = (`*Kurs: ${currencyElement.value}`);
 
-        currencyElement.addEventListener("change", showChangedCurrency);
+        currencyElement.addEventListener("change", () => showChangedCurrency(exchangeChoose));
 
     }
     
